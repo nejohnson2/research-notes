@@ -3,7 +3,29 @@
 Steps:
 
 - Install XCode and Commandline Tools
-- 
+- Install Homebrew
+
+### Shell Script Installation
+
+```shell
+# Install Xcode
+xcode-select --install
+
+# Install Homebrew
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# add
+echo "export PATH=/usr/local/bin:/usr/local/sbin:$PATH" >> ~/.bash_profile
+
+brew install python
+brew install cmake #3.3.2
+
+brew cask install xquartz
+
+# Gnuradio
+brew install gnuradio
+brew install librtlsdr
+```
 
 I also have a tremendous amount of work trying to get a fluid installation script.  At this point, none of them are working and most should be removed as they are outdated.
 
@@ -59,7 +81,7 @@ $ brew create <url>
 
 # Formula
 
-### cmake
+### cmake.rb
 
 This is a formula to install an old version of cmake-3.3.2.  Simple and tested.
 
@@ -89,7 +111,7 @@ class Cmake < Formula
 end
 ```
 
-### gnuradio
+### gnuradio.rb
 
 This formula is modified version of the ```homebrew/core/gnuradio.rb``` formula.  It removes the installation of cmake-3.3.2.
 
