@@ -45,6 +45,13 @@ The above code was taken from the ```Homebrew/core/gnuradio``` Formula which
 
 ## Homebrew Tips and Tricks
 
+Homebrew formula are located here:
+
+```
+/usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula
+```
+
+
 ```pre
 $ brew info --github <formula>
 $ brew create <url>
