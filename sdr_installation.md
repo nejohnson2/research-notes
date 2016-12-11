@@ -41,7 +41,7 @@ In whatever Formula you're trying to install, you should add something like this
     # the rest of the install process
   end
 ```
-
+The above code was taken from the ```Homebrew/core/gnuradio``` Formula which
 
 ## Homebrew Tips and Tricks
 
