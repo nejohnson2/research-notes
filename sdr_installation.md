@@ -1,9 +1,38 @@
 # SDR Installation
 
+After many long hours, I've finally been able to build gnuradio.  Below are steps to repeat.
+
 Steps:
 
 - Install XCode and Commandline Tools
 - Install Homebrew
+- 
+
+Check the [API Documentation](http://gnuradio.org/doc/doxygen/build_guide.html)
+
+
+> Note: pyqt4 must be install in order to use gr-gsm!
+
+
+### Cmake
+
+```ruby
+
+python_prefix = python-config --prefix
+args = std_cmake_args
+args << "-DPYTHON_LIBRARY='#{python_prefix}/Python'"
+args << "-DPYTHON_INCLUDE_DIR='#{python_prefix}/Headers'"
+args << "-DPYTHON_PACKAGES_PATH='#{lib}/#{which_python}/site-packages'"
+
+system 'cmake', '..', *args
+system 'make'
+system 'make install'
+
+def which_python
+  "python" + `python -c 'import sys;print(sys.version[:3])'`.strip
+end
+
+```
 
 ### Shell Script Installation
 
