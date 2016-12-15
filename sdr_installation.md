@@ -1,6 +1,6 @@
 # SDR Installation
 
-> Note: This installation script is not complete.  Pyqt4 must be install in order to use gr-gsm!
+> Note: This installation script is not complete.  Pyqt4 must be install in order to use gr-gsm!  This is a huge problem!!! Qt4 is not being supported anymore.  It may be possile to install it in the short term (in order to use gr-gsm) but in the long term it will be migrated to Qt5.  [read more](http://stackoverflow.com/questions/39690404/brew-install-qt-does-not-work-on-macos-sierra)
 
 
 After many long hours, I've finally been able to build gnuradio.  Below are steps to repeat.
@@ -57,6 +57,11 @@ pip install lxml
 pip install sphinx
 
 brew cask install xquartz
+
+# you must comment out line 36 MaximumMacOSRequirement 
+# in the formula in order to get it to compile
+brew install qt
+
 
 # More dependencies
 brew tap nejohnson2/homebrew-sdr
