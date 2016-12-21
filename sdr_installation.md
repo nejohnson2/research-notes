@@ -14,6 +14,10 @@ Steps:
 
 Check the [API Documentation](http://gnuradio.org/doc/doxygen/build_guide.html)
 
+### QT Notes
+
+According to the [Gnuradio API](http://gnuradio.org/doc/doxygen/build_guide.html), ```qt4```, ```qwt``` and ```pyat``` are dependencies.  Qt4 will not be supported in the future.  ```pyqt``` is available in the ```Homebrew/boneyard``` repository.
+
 
 ### Shell Script Installation
 
