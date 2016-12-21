@@ -18,6 +18,9 @@ Check the [API Documentation](http://gnuradio.org/doc/doxygen/build_guide.html)
 
 According to the [Gnuradio API](http://gnuradio.org/doc/doxygen/build_guide.html), ```qt4```, ```qwt``` and ```pyat``` are dependencies.  Qt4 will not be supported in the future.  ```pyqt``` is available in the ```Homebrew/boneyard``` repository.
 
+Installing ```qt4``` from [this repo](https://github.com/cartr/homebrew-qt4) worked.
+
+```qwt``` depends on ```qt5``` and therefore I did not install it.
 
 ### Shell Script Installation
 
@@ -62,10 +65,9 @@ pip install sphinx
 
 brew cask install xquartz
 
-# you must comment out line 36 MaximumMacOSRequirement 
-# in the formula in order to get it to compile
+# QT4 is outdated!!!
+brew tap cartr/qt4
 brew install qt
-
 
 # More dependencies
 brew tap nejohnson2/homebrew-sdr
