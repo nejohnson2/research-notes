@@ -27,3 +27,7 @@ Various applications:
 - rtl_test
 
 [ARFCN](http://niviuk.free.fr/gsm_arfcn.php)
+
+## Interesting Projects
+
+[Waterfall](https://github.com/keenerd/rtlsdr-waterfall)
