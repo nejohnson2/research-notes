@@ -26,12 +26,10 @@ Install:
 
 ```
 brew install nejohnson2/sdr/qt      # taken from cartr/qt4/qt
-brew install nejohnson2/sdr/qwt     # this is taken from an older commit in the homebrew/core repo
+brew install qwt                    # this installs qt5
 brew install nejohnson2/sdr/pyqt    # taken from cartr/qt4
 brew install nejohnson2/sdr/pyqwt   # taken from homebrew/core repo
 ```
-
-sip > qt > qwt > pyqt, pyqwt > gnuradio
 
 ### Shell Script Installation
 
@@ -51,6 +49,15 @@ echo "export PKG_CONFIG_PATH=\"/usr/X11/lib/pkgconfig\"" >> ~/.bash_profile
 
 # Dependencies
 brew install python
+
+# Install qt4
+brew install nejohnson2/sdr/qt      # taken from cartr/qt4/qt
+brew install qwt                    # this installs qt5
+brew install nejohnson2/sdr/pyqt    # taken from cartr/qt4
+brew install nejohnson2/sdr/pyqwt   # taken from homebrew/core repo - will probably fail
+brew install cmake
+
+# More dependencies
 brew tap homebrew/python
 brew install numpy
 brew install matplotlib 
@@ -76,17 +83,8 @@ pip install sphinx
 
 brew cask install xquartz
 
-# QT4 is outdated!!!
-brew install cartr/qt4/qt
-brew untap cart/qt4
-
-# More dependencies
-brew tap nejohnson2/homebrew-sdr
-brew install nejohnson2/sdr/qwt      # not tested - this is an older commit in the homebrew/core repo
-brew install cmake
-
 # Gnuradio
-brew install nejohnson2/sdr/gnuradio             # not tested.  my own
+brew install nejohnson2/sdr/gnuradio --with-qt             # not tested.  my own
 brew install nejohnson2/sdr/librtlsdr
 
 brew install gr-osmosdr gr-baz --HEAD
