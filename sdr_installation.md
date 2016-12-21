@@ -20,7 +20,18 @@ According to the [Gnuradio API](http://gnuradio.org/doc/doxygen/build_guide.html
 
 Installing ```qt4``` from [this repo](https://github.com/cartr/homebrew-qt4) worked.
 
-```qwt``` depends on ```qt5``` and therefore I did not install it.
+> ```qwt``` depends on ```qt5``` and therefore I did not install it.  Attempting to install from a git versino
+ 
+Install:
+
+```
+brew install nejohnson2/sdr/qt      # taken from cartr/qt4/qt
+brew install nejohnson2/sdr/qwt     # this is taken from an older commit in the homebrew/core repo
+brew install nejohnson2/sdr/pyqt    # taken from cartr/qt4
+brew install nejohnson2/sdr/pyqwt   # taken from homebrew/core repo
+```
+
+sip > qt > qwt > pyqt, pyqwt > gnuradio
 
 ### Shell Script Installation
 
@@ -66,16 +77,17 @@ pip install sphinx
 brew cask install xquartz
 
 # QT4 is outdated!!!
-brew tap cartr/qt4
-brew install qt
+brew install cartr/qt4/qt
+brew untap cart/qt4
 
 # More dependencies
 brew tap nejohnson2/homebrew-sdr
+brew install nejohnson2/sdr/qwt      # not tested - this is an older commit in the homebrew/core repo
 brew install cmake
 
 # Gnuradio
-brew install gnuradio
-brew install librtlsdr
+brew install nejohnson2/sdr/gnuradio             # not tested.  my own
+brew install nejohnson2/sdr/librtlsdr
 
 brew install gr-osmosdr gr-baz --HEAD
 
