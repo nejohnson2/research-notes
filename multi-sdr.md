@@ -31,3 +31,5 @@ Various applications:
 ## Interesting Projects
 
 [Waterfall](https://github.com/keenerd/rtlsdr-waterfall)
+[Dump1090](https://github.com/antirez/dump1090)
+[rtl_433](https://github.com/merbanan/rtl_433)
