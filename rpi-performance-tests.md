@@ -4,6 +4,8 @@
 
 [here](http://www.makeuseof.com/tag/15-useful-commands-every-raspberry-pi-user-should-know/)
 
+[This](http://www.satsignal.eu/raspberry-pi/monitoring.html) might also be interesting
+
 #### Shutdown
 
 ```
