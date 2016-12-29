@@ -42,7 +42,7 @@ $ echo "$((cpu/1000)) c"
 
 Create an example bash script ``` temperature.sh```:
 
-```
+```bash
 #!/bin/bash
 # Script: my-pi-temp.sh
 # Purpose: Display the ARM CPU and GPU  temperature of Raspberry Pi 2/3 
@@ -57,6 +57,32 @@ echo "CPU => $((cpu/1000))'C"
 
 then:
 
-```
+```bash
 $ chmod +x temperature.sh
+```
+
+#### Python Class for Temperature
+
+```python
+#!/usr/bin/env python
+
+import tornado.ioloop
+import tornado.web
+import os
+
+class MainHandler(tornado.web.RequestHandler):
+    def getCPUtemperature( self ):
+        res = os.popen('vcgencmd measure_temp').readline()
+        return(res.replace("temp=","").replace("'C\n",""))
+
+    def get(self):
+        self.write( "Temperature: %s" % ( self.getCPUtemperature() ) )
+
+application = tornado.web.Application([
+    (r"/", MainHandler),
+])
+
+if __name__ == "__main__":
+    application.listen(8888)
+    tornado.ioloop.IOLoop.instance().start()
 ```
