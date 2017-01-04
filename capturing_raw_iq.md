@@ -5,7 +5,7 @@
 - [Advanced Topics in Wireless Communication](http://witestlab.poly.edu/~ffund/el9043/): This is the NYU Poly class that has lots of resources.
 - [This Notebook](http://localhost:8888/notebooks/SDR_Lab_1.ipynb) are notes about FM demodulation
 
-## Notes
+## Capture IQ
 
 The snippet of code below is used to capture IQ samples for ```T``` seconds:
 
@@ -27,6 +27,42 @@ def capture(Tc, fc=88.7e6, fs=2.4e6, gain='auto', ppm=60):
 ```
 From here, one can demodulate the IQ as desired.
 
+Another interesting approach is like this:
+
+```python
+import numpy as np
+from rtlsdr import RtlSdr
+import time, threading
+
+NFFT = 1024 #*4
+NUM_SAMPLES_PER_SCAN = NFFT*16
+
+class Radio(object):
+
+    def __init__(self, sdr):
+        self.sdr = sdr
+
+    def updateSamples(self):
+        self.samples = self.sdr.read_samples(NUM_SAMPLES_PER_SCAN)
+        self.psd_scan, self.f = psd(self.samples, NFFT=NFFT)
+        threading.Timer(0.02, self.updateSamples).start()
+
+if __name__ == "__main__":
+    sdr = RtlSdr()
+    radio = Radio(sdr)
+
+    # some defaults
+    sdr.rs = 2.0e6
+    sdr.fc = 145.0e6
+    sdr.gain = 10
+
+    # start polling for samples
+    radio.updateSamples()
+```
+
+which I found [here](https://github.com/irl/websdr-plus/blob/5a7b18889e5ebb6e40d3efcc880252e711b5be0b/app.py).  I dont like how it's plotted but the capture part is interesting.
+
+### Multiple Devices
 You can also specify which RTLSDR device you would like to use if you are using more than one.  Simple pass an integer into the ```RtlSdr()``` class which looks something like this ```sdr = rtlsdr.Rtlsdr(1)```.
 
 ### Plotting
