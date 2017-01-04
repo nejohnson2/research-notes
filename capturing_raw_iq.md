@@ -27,4 +27,37 @@ def capture(Tc, fc=88.7e6, fs=2.4e6, gain='auto', ppm=60):
 ```
 From here, one can demodulate the IQ as desired.
 
+You can also specify which RTLSDR device you would like to use if you are using more than one.  Simple pass an integer into the ```RtlSdr()``` class which looks something like this ```sdr = rtlsdr.Rtlsdr(1)```.
+
+### Plotting
+There are then two wasy of plotting IQ data.  First you can use a spectrogram plot via matplot lib with ```plt.specgram``` or you can use a power spectrual desnisty plot with ```plt.psd```.  Here are two examples.
+
+First with the spectrogram:
+
+```python
+# Pxx is the segments x freqs array of instantaneous power, freqs is
+# the frequency vector, bins are the centers of the time bins in which
+# the power is computed, and im is the matplotlib.image.AxesImage
+# instance
+
+Pxx, freqs, bins, im = plt.specgram(x, NFFT=1024, Fs=fs, Fc=fc)
+plt.xlabel("Time (seconds)")
+plt.ylabel("Frequency (MHz)")
+```
+which looks like this:
+
+![alt text](docs/specgram.png)
+
+and then the PSD
+
+```python
+plt.psd(x, NFFT=1024, Fc=fc, Fs=fs)
+plt.title('PSD of Captured Signal')
+```
+
+which looks like this
+
+![alt text](docs/psd.png)
+
+### Analysis with Scipy
 Using scipy.signal Library with RTLSDR
