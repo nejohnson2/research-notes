@@ -82,7 +82,7 @@ plt.ylabel("Frequency (MHz)")
 ```
 which looks like this:
 
-![alt text](docs/specgram.png)
+![alt text](docs/specgram.png =100x100)
 
 and then the PSD
 
