@@ -82,7 +82,7 @@ plt.ylabel("Frequency (MHz)")
 ```
 which looks like this:
 
-![alt text](docs/specgram.png =100x100)
+<img src="docs/specgram.png" alt="specgram" width="250"/>
 
 and then the PSD
 
@@ -93,7 +93,7 @@ plt.title('PSD of Captured Signal')
 
 which looks like this
 
-![alt text](docs/psd.png)
+<img src="docs/psd.png" alt="psd" width="250"/>
 
 ### Analysis with Scipy
 Using scipy.signal Library with RTLSDR
