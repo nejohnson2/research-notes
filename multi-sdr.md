@@ -36,6 +36,45 @@ Various applications:
 
 [ARFCN](http://niviuk.free.fr/gsm_arfcn.php)
 
+## Installing Software for Ubuntu 16.04
+
+I installed Ubuntu 16.04 with VirtualBox then started installing software.  This largely follows instructions on the [gr-gsm wiki](https://github.com/ptrkrysik/gr-gsm/wiki/Manual-compilation-and-installation), though the first couple of times were unsuccessful.
+
+### Install Gr-gsm
+
+```
+sudo apt-get update
+sudo apt-get upgrade
+
+# install software
+sudo apt-get install gnuradio gnuradio-dev
+sudo apt-get install rtl-sdr librtlsdr-dev
+sudo apt-get install gr-osmosdr libosmosdr-dev
+sudo apt-get install libosmocore libosmocore-dev
+
+# Install some dependencies
+sudo apt-get install cmake libboost-all-dev libcppunit-dev swig doxygen liblog4cpp5-dev python-scipy
+
+# Add environmental variables
+export PATH=/home/YOUR_HOME_DIR/gr-gsm/bin:$PATH
+export LD_LIBRARY_PATH=/home/YOUR_HOME_DIR/gr-gsm/lib:$LD_LIBRARY_PATH
+
+# Install Gr-gsm
+git clone https://github.com/ptrkrysik/gr-gsm.git
+cd gr-gsm
+mkdir build
+cd build
+cmake ..
+make
+sudo make install
+```
+
+### Install Multi-rtlsdr
+
+```
+
+```
+
 ## Interesting Projects
 
 [Waterfall](https://github.com/keenerd/rtlsdr-waterfall)
