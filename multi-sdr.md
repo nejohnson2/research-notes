@@ -71,8 +71,17 @@ sudo make install
 
 ### Install Multi-rtlsdr
 
-```
+Directions are taken form [here](https://github.com/ptrkrysik/multi-rtl) and the below steps were taken after the successfull installation of ```gr-gsm``` through the steps above.
 
+```
+git clone https://github.com/ptrkrysik/multi-rtl.git
+
+cd multi-rtl
+mkdir build
+cd build
+cmake ..
+sudo make install
+sudo ldconfig
 ```
 
 ## Interesting Projects
