@@ -8,6 +8,22 @@ To accomplish this, you can use least squares regression to identify the direct 
 
 You should be able to create and image like this: <img src="http://2.bp.blogspot.com/-xISRmtiRLYk/UkSRRCZpFhI/AAAAAAAABjc/OxbWZHaiWlQ/s1600/passive-000141.png" width=400 align=right />
 
+### Signal Processing
+
+[Linear regression for signal processing](https://www.dsprelated.com/freebooks/sasp/Least_Squares_Sinusoidal_Parameter.html)
+
+- Step 1: Read in the data:
+
+```
+import numpy as np
+import scipy
+
+c0 = scipy.fromfile(open("~/ch0.cfile"), dtype=scipy.complex64)
+c1 = scipy.fromfile(open("~/ch1.cfile"), dtype=scipy.complex64)
+```
+- Step 2: Model the signal
+- Step X: [scipy.deconvolve](https://docs.scipy.org/doc/scipy-0.15.1/reference/generated/scipy.signal.deconvolve.html#scipy.signal.deconvolve)
+
 
 ### PPM Offset
 
