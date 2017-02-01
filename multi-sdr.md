@@ -21,10 +21,11 @@ import scipy
 c0 = scipy.fromfile(open("~/ch0.cfile"), dtype=scipy.complex64)
 c1 = scipy.fromfile(open("~/ch1.cfile"), dtype=scipy.complex64)
 ```
-- Step 2: Model the signal
+- Step 2: Create a filter using least-squares estimation for filter parameters
 - Step X: [scipy.deconvolve](https://docs.scipy.org/doc/scipy-0.15.1/reference/generated/scipy.signal.deconvolve.html#scipy.signal.deconvolve)
 
 - [Gnuradio Symbol Recovery Tutorial](http://gnuradio.org/redmine/projects/gnuradio/wiki/Guided_Tutorial_PSK_Demodulation)
+- [Gnuradio Tutorial from Ettus](http://files.ettus.com/tutorials/labs/Lab_1-5.pdf)
 
 ### PPM Offset
 
