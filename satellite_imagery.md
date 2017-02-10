@@ -12,11 +12,11 @@
 ## Data
 The [USGS Data page](https://eros.usgs.gov/satellite-imagery) is the primary source of information regarding Satellite imagery.  This includes numerous declassified satellite datasets and current satellite progrms.  I'm not sure if this is the most extensive list.
 
-- *ASTER (Advanced Spaceborne Thermal Emission and Reflection Radiometer):**
+- **ASTER (Advanced Spaceborne Thermal Emission and Reflection Radiometer):**
 - **AVHRR (Advanced Very High Resolution Radiometer):**
-- **CDP (Comercial Data Purchase Imagery):**
+- **MODIS (Moderate Resolution Imaging Spectroradiometer)**: Moderate-resolution (250- to 1000-meter) multispectral data from the Terra Satellite (2000 to present) and Aqua Satellite (2002 to present).
 - **Earth Observing-1 (EO-1) Advanced Land Imager (ALI) and Hyperion:** 10- to 30-meter multispectral and hyperspectral data from the Earth Observing-1 (EO-1) Extended Mission. (2000-2017)
-- **[Sentinal 2](https://lta.cr.usgs.gov/sentinel_2)**:
+- **[Sentinal 2](https://lta.cr.usgs.gov/sentinel_2)**: The Sentinel-2 MultiSpectral Instrument (MSI) acquires 13 spectral bands ranging from Visible and Near-Infrared (VNIR) to Shortwave Infrared (SWIR) wavelengths along a 290-km orbital swath.
 
 ## Data Portals
 - EarthExplorer:
