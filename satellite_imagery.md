@@ -1,5 +1,24 @@
 # Satellite Imagery and Python
 
+# Overview
+
+## The United States Geological Survey (USGS)
+
+### Programs
+- EROS: Earth Resources Observation and Science Center:
+- LSR - Land Remote Sensing Program
+- 
+
+## Data
+- ASTER (Advanced Spaceborne Thermal Emission and Reflection Radiometer):
+- AVHRR (Advanced Very High Resolution Radiometer):
+- CDP (Comercial Data Purchase Imagery):
+- Earth Observing-1 (EO-1) Advanced Land Imager (ALI) and Hyperion: 10- to 30-meter multispectral and hyperspectral data from the Earth Observing-1 (EO-1) Extended Mission. (2000-2017)
+
+## Data Portals
+- EarthExplorer:
+- LandsatLook
+
 # Landsat 1 and Landsat 8 
 Provide 30 meter resolution (NIR and SWIR), 100 meters (thermal) and 15 meters (panchromatic).  The data can be downloaded from [https://earthexplorer.usgs.gov/](https://earthexplorer.usgs.gov/)
 
