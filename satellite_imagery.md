@@ -45,7 +45,8 @@ The **ASTER sensor** is mounted on the **TERRA satellite** and provides high res
 Several datasets for CO2 are available from the [NASA Jet Propulsion Lab](https://co2.jpl.nasa.gov/).  The datasets are downloaded in bulk; the 'lite' version is 54GB and the full version is 1TB.  The sites offer python scripts if you customize your download selection.
 
 # MISC
-- [Digital Globe](https://www.digitalglobe.com/): this seems to be a private company who built super high resolution sensors for various satellites.  There was the **Quickbird** satellite ran from the early 2000s to 2010ish.  That program became **Worldview-1**, **Worldview-2** and **Worldview-3**.  The resolution for visible and multispectral imagery are incredible - less than a meter!
+- [Global Land Cover Facility](http://glcf.umd.edu/data/): collection of satellite data.
+- [Digital Globe](https://www.digitalglobe.com/): this seems to be a private company who built super high resolution sensors for various satellites.  There was the **Quickbird** satellite ran from the early 2000s to 2010ish.  That program became **Worldview-1**, **Worldview-2** and **Worldview-3**.  The resolution for visible and multispectral imagery are incredible - less than a meter!  **Quickbird** data can be accessed from [http://glcf.umd.edu/data/quickbird/](http://glcf.umd.edu/data/quickbird/)
 - [Earth Observation Data](https://earthdata.nasa.gov/earth-observation-data): I havent spent much time looking over this page but it seems there is a lot of data available.
 - [NASA Earth Science Data](http://eospso.gsfc.nasa.gov/content/nasa-earth-science-data): lots of links.  havent explored
 [The National Map](https://viewer.nationalmap.gov/viewer/) seems to be a country-wide geospatial dataset that includes 1 foot resolution imagery, topographic contours, borders and much more.
