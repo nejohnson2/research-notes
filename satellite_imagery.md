@@ -7,7 +7,6 @@ Global Land Survey (GLS)
 ### Programs
 - EROS: Earth Resources Observation and Science Center:
 - LSR - Land Remote Sensing Program
-- 
 
 ## Data Sources
 The [USGS Data page](https://eros.usgs.gov/satellite-imagery) is the primary source of information regarding Satellite imagery.  This includes numerous declassified satellite datasets and current satellite progrms.  I'm not sure if this is the most extensive list.
