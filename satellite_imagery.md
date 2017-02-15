@@ -1,7 +1,5 @@
 # Satellite Imagery and Python
 
-# Overview
-
 ## The United States Geological Survey (USGS)
 
 Global Land Survey (GLS)
@@ -34,14 +32,20 @@ A complete list of datasets derrived from satellite imagery can be found [here](
 
 - [AVHRR Normalized Difference Vegetation Index (NDVI) Composites](https://lta.cr.usgs.gov/NDVI)
 
-# Landsat 1 and Landsat 8 
+## Landsat 1 and Landsat 8 
 Provide 30 meter resolution (NIR and SWIR), 100 meters (thermal) and 15 meters (panchromatic).  
 
 These [iPython Notebooks from PyDataNYC2014](https://github.com/HyperionAnalytics/PyDataNYC2014) have an excellent explaination of the different bands and how to process them. 
 
-# ASTER TERRA
+## ASTER TERRA
 The **ASTER sensor** is mounted on the **TERRA satellite** and provides high resolution (15m-90m) images in 14 bands including visible to near infrared bands (VNIR bands 1-3), six shortwave infrared bands (SWIR bands 4-9) and five thermal or long wave infrared bands (TIR bands 10-14).  ASTER images map surface temperature, emissivity and reflectance of the earths surface.  L1A is raw data and L1B is radiometrically and geometrically corrected.  Data are available from [http://reverb.echo.nasa.gov/reverb/](http://reverb.echo.nasa.gov/reverb/).
+
+# NASA
+
+Several datasets for CO2 are available from the [NASA Jet Propulsion Lab](https://co2.jpl.nasa.gov/).  The datasets are downloaded in bulk; the 'lite' version is 54GB and the full version is 1TB.  The sites offer python scripts if you customize your download selection.
 
 # MISC
 
+- [Earth Observation Data](https://earthdata.nasa.gov/earth-observation-data): I havent spent much time looking over this page but it seems there is a lot of data available.
+- [NASA Earth Science Data](http://eospso.gsfc.nasa.gov/content/nasa-earth-science-data): lots of links.  havent explored
 [The National Map](https://viewer.nationalmap.gov/viewer/) seems to be a country-wide geospatial dataset that includes 1 foot resolution imagery, topographic contours, borders and much more.
