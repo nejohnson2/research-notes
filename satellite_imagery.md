@@ -40,6 +40,9 @@ These [iPython Notebooks from PyDataNYC2014](https://github.com/HyperionAnalytic
 ## ASTER TERRA
 The **ASTER sensor** is mounted on the **TERRA satellite** and provides high resolution (15m-90m) images in 14 bands including visible to near infrared bands (VNIR bands 1-3), six shortwave infrared bands (SWIR bands 4-9) and five thermal or long wave infrared bands (TIR bands 10-14).  ASTER images map surface temperature, emissivity and reflectance of the earths surface.  L1A is raw data and L1B is radiometrically and geometrically corrected.  Data are available from [http://reverb.echo.nasa.gov/reverb/](http://reverb.echo.nasa.gov/reverb/).
 
+## CALIPSO
+Cloud-Aerosal LIdar Pathfinder Satellite Observations: [data](https://eosweb.larc.nasa.gov/project/calipso/calipso_table)
+
 # NASA
 
 Several datasets for CO2 are available from the [NASA Jet Propulsion Lab](https://co2.jpl.nasa.gov/).  The datasets are downloaded in bulk; the 'lite' version is 54GB and the full version is 1TB.  The sites offer python scripts if you customize your download selection.
